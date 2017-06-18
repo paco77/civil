@@ -16,7 +16,7 @@ class teacherController extends Controller
      */
     public function index()
     {
-        $teachers=Teacher::All();
+        $teachers=Teacher::paginate(7);
         return view('profes.index',compact('teachers'));
     }
 
@@ -49,7 +49,8 @@ class teacherController extends Controller
      */
     public function show($id)
     {
-        //
+        $teacher=Teacher::find($id);
+        return view('profes.show',['teacher'=>$teacher]);
     }
 
     /**

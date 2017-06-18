@@ -5,7 +5,7 @@
 	</div>
 	<div class="form-group">
 		{!!Form::label('RPE')!!}
-		{!!Form::text('rpe',null,['class'=>'form-control','placeholder'=>'Ingresa rpe'])!!}
+		{!!Form::text('rpe',null,['size'=>'10','class'=>'form-control','placeholder'=>'Ingresa rpe'])!!}
 	</div>
 	<div class="form-group">
 		{!!Form::label('TITULO')!!}
@@ -40,7 +40,7 @@
 		{!!Form::text('correo',null,['class'=>'form-control','placeholder'=>'Ingresa Email'])!!}
 	</div>
 	<div class="form-group">
-		{!!Form::label('EMAIL ALTERNATIVO')!!}
+		{!!Form::label('email', 'E-Mail Alternativo', ['class' => 'awesome']);!!}
 		{!!Form::text('correo_alter',null,['class'=>'form-control','placeholder'=>'Ingresa correo alternativo'])!!}
 	</div>
 			{!!Form::submit('Registrar',['class'=>'btn btn-primary'])!!}

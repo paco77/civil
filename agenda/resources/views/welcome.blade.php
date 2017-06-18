@@ -1,95 +1,122 @@
 <!doctype html>
-<html lang="{{ config('app.locale') }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civiles</title>
+    {!!Html::style('css/style1.css')!!}
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="header"; style="width: 100%;">
+            <div>
+                <a href="" class="logo"><img src="img/logo.png" alt=""></a>
+                <ul id="navigation">
+                    <li class="selected">
+                        <a href="{{route('profes.index')}}">LISTAR</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="menu">
+                        <a href="{{route('profes.create')}}">REGISTRAR</a>
+                        <!--<ul class="primary">
+                            <li>
+                                <a href="proj1.html">proj 1</a>
+                            </li>
+                        </ul>-->
+                    </li>
+                    <li class="menu">
+                        <a href="blog.html">Blog</a>
+                        <ul class="secondary">
+                            <li>
+                                <a href="singlepost.html">Single post</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="body" class="home">
+            <div class="header">
+                <div>
+                    <h1>INGENIERIA CIVIL</h1>
+                    <h2>DOCENCIA</h2>
+                    <a href="blog.html" class="more">Read More</a>
+                    <h3>FEATURED PROJECTS</h3>
+                    <ul>
+                        <li>
+                            <a href="projects.html"><img src="images/project-image1.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="projects.html"><img src="images/project-image2.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="projects.html"><img src="images/project-image3.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="projects.html"><img src="images/project-image4.jpg" alt=""></a>
+                        </li>
+                    </ul>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+            </div>
+            <div class="body">
+                <div>
+                    <h1>OUR MISSION</h1>
+                    <p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.</p>
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+            </div>
+            <div class="footer">
+                <div>
+                    <ul>
+                        <li>
+                            <h1>FEATURED VIDEO</h1>
+                            <a href="blog.html"><img src="images/mars-rover.jpg" alt=""><span></span></a>
+                        </li>
+                        <li>
+                            <h1>LATEST BLOG</h1>
+                            <ul>
+                                <li>
+                                    <a href="blog.html"><img src="images/finding-planet.jpg" alt=""></a>
+                                    <h1>FINDING PLANET X-123</h1>
+                                    <span>FEBRUARY 6, 2023</span>
+                                    <a href="blog.html" class="more">Read More</a>
+                                </li>
+                                <li>
+                                    <a href="blog.html"><img src="images/new-satellitedish.jpg" alt=""></a>
+                                    <h1>NEW SATELLITE DISH</h1>
+                                    <span>FEBRUARY 3, 2023</span>
+                                    <a href="blog.html" class="more">Read More</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </body>
+        <div id="footer">
+            <div class="connect">
+                <div>
+                    <h1>FOLLOW OUR  MISSIONS ON</h1>
+                    <div>
+                        <a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a>
+                        <a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a>
+                        <a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
+                        <a href="http://pinterest.com/fwtemplates/" class="pinterest">pinterest</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footnote">
+                <div>
+                    <p>&copy; 2023 BY SPACE PROSPECTION | ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+
 </html>

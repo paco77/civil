@@ -11,8 +11,8 @@
 |
 */
 
-/*Route::get('/', function () {
-    return view('layouts/principal');
-});*/
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::resource('profes','teacherController');

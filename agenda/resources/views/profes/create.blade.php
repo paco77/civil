@@ -1,7 +1,9 @@
 @extends('layouts.principal')
 
 @section('content')
-{!!Form::open(['route'=>'profes.store', 'method'=>'post'])!!}
-	@include('profes.forms.profe')
-{!!Form::close()!!}
+<div class="form">
+	{!!Form::open(['route'=>'profes.store', 'method'=>'post'])!!}
+		@include('profes.forms.profe')
+	{!!Form::close()!!}
+</div>
 @stop
